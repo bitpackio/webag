@@ -51,12 +51,12 @@ Zwei Modi (werden unten links angezeigt): -- EINFÜGEN -- und Speichern/Schließ
 -- EINFÜGEN -- ist der Eingabemodus: Man kann nur im Eingabemodus schreiben
 Wenn man nicht im Eingabemosud ist, kann man Speichern, Schließen, kopieren usw.
 
-- In den Eingabemodus: Taste i drücken (jetzt steht unten links -- EINFÜGEN --)
-- Den Eingabemodus verlassen: Taste Ecs drücken (-- EINFÜGEN -- ist unten links verschwunden)
-- SPEICHERN: 1) Eingabemodus verlassen 2) :w eingeben, mit Enter bestätigen
-- Schließen und VIM verlassen: 1) Eingabemodus verlassen 2) :q, mit Enter bestätigen
-- Speichern und Schließen: 1) Eingabemodus verlassen 2) :wq, mit Enter bestätigen
-- Rückgängig: 1) Eingabemodus verlassen 2) dd
-- 1 Zeile Kopieren: 1) Eingabemodus verlassen 2) yy
-- 1 Zeile Pasten: 1) Eingamemodus verlassen 2) p
+- In den Eingabemodus: Taste `i` drücken (jetzt steht unten links -- EINFÜGEN --)
+- Den Eingabemodus verlassen: Taste `Esc` drücken (-- EINFÜGEN -- ist unten links verschwunden)
+- SPEICHERN: 1) Eingabemodus verlassen 2) `:w` eingeben, mit `Enter` bestätigen
+- Schließen und VIM verlassen: 1) Eingabemodus verlassen 2) `:q`, mit `Enter` bestätigen
+- Speichern und Schließen: 1) Eingabemodus verlassen 2) `:wq`, mit `Enter` bestätigen
+- Rückgängig: 1) Eingabemodus verlassen 2) `dd`
+- 1 Zeile Kopieren: 1) Eingabemodus verlassen 2) `yy`
+- 1 Zeile Pasten: 1) Eingamemodus verlassen 2) `p`
 
