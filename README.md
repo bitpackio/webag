@@ -4,27 +4,27 @@ Web-AG README
 Git Befehle
 -----------
 
-- Lokales Git Repository personalisieren:
-	`git config --global user.name "DEIN GITHUB-NAME"`
+- Lokales Git Repository personalisieren:  
+	`git config --global user.name "DEIN GITHUB-NAME"`  
 	`git config --global user.email EMAIL-ADRESSE@DOMAIN.COM`
 
-- Status des lokalen git Repository anzeigen lassen
+- Status des lokalen git Repository anzeigen lassen  
 	`git status`
 
-- Für eine Stunde (= 3600 Sekunden) keine Zugangsdaten bei pull oder push eingeben müssen:
+- Für eine Stunde (= 3600 Sekunden) keine Zugangsdaten bei pull oder push eingeben müssen:  
 	`git config --global credential.helper 'cache --timeout=3600'`
 
-- Anlegen eines neuen (lokalen) Git-Repositorys aus einem bestehenden Repository von github:
+- Anlegen eines neuen (lokalen) Git-Repositorys aus einem bestehenden Repository von github:  
 	`git clone https://github.com/URL/ZUM/GIT-REPOSITORY.git`
 	- Link zu diesem Git-Repository: https://github.com/bitpackio/webag.git
 
-- Dateien oder Ordner entfernen oder umbenennen: s. Befehle zur Dateiverwaltung, Bewehle jeweils mit `git` davor
+- Dateien oder Ordner entfernen oder umbenennen: siehe Befehle zur Dateiverwaltung, Bewehlen jeweils `git` vorstellen
 
-- Wenn neue Datei angelegt oder eine bestehende Datei im lokal geändert wurde:
+- Wenn neue Datei angelegt oder eine bestehende Datei lokal geändert wurde:
 	- hinzufügen zum lokalen Repository:  
 	`git add ORDNER oder PFAD/ZUR/DATEI` (added den Ordner oder die Datei im Ordner, diese müssen aber sichtbar sein)  
 	`git add *` (added alle Ordner und Dateien im aktuellen Ordner)  
-	im Prinzip gleichbedeutend: `git add .` (added den aktuellen Ordner)
+	`git add .` (added den aktuellen Ordner, quasi gleichbedeutend mit `git add *`)
 
 	- dann (zur Sicherheit) das lokale Repository nochmal auf den aktuellen Stand bringen:  
 	`git pull` ("saugt" alle inzwischen auf github aktualisierten Dateien – du hast nun die aktuelle Version)
@@ -35,7 +35,7 @@ Git Befehle
 	- dann in das gemeinsame Repository auf github pushen:  
 	`git push -u origin main`
 
-- Bevor du lokal loslegst und an einer Datei arbeitest oder commitest: Immer erst die aktuelle Version mit `git pull` pullen!
+Bevor du lokal loslegst und an einer Datei arbeitest oder commitest: Immer erst die aktuelle Version mit `git pull` pullen!
 
 
 Konsolen-Befehle zur Dateiverwaltung
@@ -52,6 +52,7 @@ Außerhalb eines Git-Repositorys: (ansonsten vor den Befehl `git` schreiben, z.B
 - Einen Ordner umbenennen und/oder verschieben: `mv ALTER/PFAD/ALTERORDNERNAME NEUER/PFAD/NEUERORDNERNAME`
 
 Liste wichtiger Konsolen-Befehle: https://wiki.ubuntuusers.de/Shell/Befehls%C3%BCbersicht/#Grundkommandos
+
 
 Konsolen-Editor VIM bedienen
 ----------------------------
