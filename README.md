@@ -21,21 +21,22 @@ Git Befehle
 - Dateien oder Ordner entfernen oder umbenennen: s. Befehle zur Dateiverwaltung, Bewehle jeweils mit `git` davor
 
 - Wenn neue Datei angelegt oder eine bestehende Datei im lokal geändert wurde:
-	- hinzufügen zum lokalen Repository:
-	`git add ORDNER oder PFAD/ZUR/DATEI` (added den Ordner oder die Datei im Ordner, diese müssen aber sichtbar sein)
-	`git add *` (added alle Ordner und Dateien im aktuellen Ordner)
+	- hinzufügen zum lokalen Repository:  
+	`git add ORDNER oder PFAD/ZUR/DATEI` (added den Ordner oder die Datei im Ordner, diese müssen aber sichtbar sein)  
+	`git add *` (added alle Ordner und Dateien im aktuellen Ordner)  
 	im Prinzip gleichbedeutend: `git add .` (added den aktuellen Ordner)
 
-	- dann (zur Sicherheit) das lokale Repository nochmal auf den aktuellen Stand bringen:
+	- dann (zur Sicherheit) das lokale Repository nochmal auf den aktuellen Stand bringen:  
 	`git pull` ("saugt" alle inzwischen auf github aktualisierten Dateien – du hast nun die aktuelle Version)
 
-	- dann committen, damit deine Mitprogrammierer wissen was genau du geändert hast
+	- dann committen, damit deine Mitprogrammierer wissen was genau du geändert hast:  
 	`git commit -m "NACHRICHT ZUR ÄNDERUNG"`
 
-	- dann in das gemeinsame Repository auf github pushen
+	- dann in das gemeinsame Repository auf github pushen:  
 	`git push -u origin main`
 
-- Bevor du lokal loslegst und an einer Datei arbeitest, oder commitest: Immer erst die aktuelle Verion mit `git pull` pullen!
+- Bevor du lokal loslegst und an einer Datei arbeitest oder commitest: Immer erst die aktuelle Version mit `git pull` pullen!
+
 
 Konsolen-Befehle zur Dateiverwaltung
 ------------------------------------
@@ -50,24 +51,26 @@ Außerhalb eines Git-Repositorys: (ansonsten vor den Befehl `git` schreiben, z.B
 - Eine Datei umbenennen und/oder verschieben: `mv ALTER/PFAD/ALTERDATEINAME.txt NEUER/PFAD/NEUERDATEINAME.txt`
 - Einen Ordner umbenennen und/oder verschieben: `mv ALTER/PFAD/ALTERORDNERNAME NEUER/PFAD/NEUERORDNERNAME`
 
-
+Liste wichtiger Konsolen-Befehle: https://wiki.ubuntuusers.de/Shell/Befehls%C3%BCbersicht/#Grundkommandos
 
 Konsolen-Editor VIM bedienen
 ----------------------------
 
 - Datei mit VIM öffnen: `vim DATEI.txt`
 
-Zwei Modi (wird unten links angezeigt): `-- EINFÜGEN --` und Speichern/Schließen/Kopieren ...
-`-- EINFÜGEN --` ist der Eingabemodus: Man kann nur im Eingabemodus schreiben
-Wenn man nicht im Eingabemosud ist, kann man speichern, schließen, kopieren usw.
+Zwei Modi (wird unten links angezeigt): `-- EINFÜGEN --` und Speichern/Schließen/Kopieren.  
+`-- EINFÜGEN --` ist der Eingabemodus: Man kann nur im Eingabemodus schreiben  
+Wenn man nicht im Eingabemodus ist, kann man speichern, schließen, kopieren, löschen usw.
 
-- In den Eingabemodus: Taste `i` drücken (jetzt steht unten links `-- EINFÜGEN --`)
+- In den Eingabemodus gelangen: Taste `i` drücken (jetzt steht unten links `-- EINFÜGEN --`)
 - Den Eingabemodus verlassen: Taste `Esc` drücken (`-- EINFÜGEN --` ist unten links verschwunden)
 
-- Speichern: 1) Eingabemodus verlassen 2) `:w` eingeben, mit `Enter` bestätigen
-- Schließen und VIM verlassen: 1) Eingabemodus verlassen 2) `:q`, mit `Enter` bestätigen
-- Speichern und Schließen: 1) Eingabemodus verlassen 2) `:wq`, mit `Enter` bestätigen
-- Rückgängig machen: 1) Eingabemodus verlassen 2) `dd`
+Außerhalb des Eingabemodus:
+- Speichern: `:w` eingeben, mit `Enter` bestätigen
+- Schließen und VIM verlassen: `:q`, mit `Enter` bestätigen
+- Speichern und Schließen: `:wq`, mit `Enter` bestätigen
+- Rückgängig machen: `dd`
 - 1 Zeile kopieren: 1) Eingabemodus verlassen 2) `yy`
 - 1 Zeile einfügen: 1) Eingamemodus verlassen 2) `p`
 
+Übersicht zu VIM-Befehlen: https://wiki.ubuntuusers.de/VIM/#VIM-Modi
