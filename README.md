@@ -14,7 +14,7 @@ Git Befehle
 - Für eine Stunde (= 3600 Sekunden) keine Zugangsdaten bei pull oder push eingeben müssen:
 	`git config --global credential.helper 'cache --timeout=3600'`
 
-- Anlagen eines neuen (lokalen) git repositorys aus einem bestehenden Repository von github:
+- Anlegen eines neuen (lokalen) Git-Repositorys aus einem bestehenden Repository von github:
 	`git clone https://github.com/URL/ZUM/GIT-REPOSITORY.git`
 	- Link zu diesem Git-Repository: https://github.com/bitpackio/webag.git
 
@@ -23,14 +23,14 @@ Git Befehle
 - Wenn neue Datei angelegt oder eine bestehende Datei im lokal geändert wurde:
 	- hinzufügen zum lokalen Repository:
 	`git add ORDNER oder PFAD/ZUR/DATEI` (added den Ordner oder die Datei im Ordner, diese müssen aber sichtbar sein)
-	`git add *` (added einfach alle Änderungen)
-	`git add .` (added alle Änderungen des aktuellen Ordners)
+	`git add *` (added alle Ordner und Dateien im aktuellen Ordner)
+	im Prinzip gleichbedeutend: `git add .` (added den aktuellen Ordner)
 
 	- dann (zur Sicherheit) das lokale Repository nochmal auf den aktuellen Stand bringen:
 	`git pull` ("saugt" alle inzwischen auf github aktualisierten Dateien – du hast nun die aktuelle Version)
 
 	- dann committen, damit deine Mitprogrammierer wissen was genau du geändert hast
-	`git commit -m "NACHRICHT ZUR ÄNDERUNG">`
+	`git commit -m "NACHRICHT ZUR ÄNDERUNG"`
 
 	- dann in das gemeinsame Repository auf github pushen
 	`git push -u origin main`
