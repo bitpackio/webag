@@ -35,7 +35,10 @@ Git Befehle
 	- dann in das gemeinsame Repository auf github pushen:  
 	`git push -u origin main`
 
-Bevor du lokal loslegst und an einer Datei arbeitest oder commitest: Immer erst die aktuelle Version mit `git pull` pullen!
+Hinweise:
+- Bevor du lokal an einer Datei arbeitest oder Änderungen committest: Immer erst die aktuelle Version mit `git pull` pullen!
+- Bei mehreren, voneinander unabhängigen Änderungen, z.B. in verschiedenen Dateien:  
+	Mehrere Commits machen, damit man die Änderungen einzeln sieht und ggf. eine rückgängig machen kann, ohne die anderen zu beeinflussen
 
 
 Konsolen-Befehle zur Dateiverwaltung
@@ -51,7 +54,7 @@ Außerhalb eines Git-Repositorys: (ansonsten vor den Befehl `git` schreiben, z.B
 - Eine Datei umbenennen und/oder verschieben: `mv ALTER/PFAD/ALTERDATEINAME.txt NEUER/PFAD/NEUERDATEINAME.txt`
 - Einen Ordner umbenennen und/oder verschieben: `mv ALTER/PFAD/ALTERORDNERNAME NEUER/PFAD/NEUERORDNERNAME`
 
-Liste wichtiger Konsolen-Befehle: https://wiki.ubuntuusers.de/Shell/Befehls%C3%BCbersicht/#Grundkommandos
+Übersicht wichtiger Konsolen-Befehle: https://wiki.ubuntuusers.de/Shell/Befehls%C3%BCbersicht/#Grundkommandos
 
 
 Konsolen-Editor VIM bedienen
@@ -71,7 +74,7 @@ Außerhalb des Eingabemodus:
 - Schließen und VIM verlassen: `:q`, mit `Enter` bestätigen
 - Speichern und Schließen: `:wq`, mit `Enter` bestätigen
 - Rückgängig machen: `dd`
-- 1 Zeile kopieren: 1) Eingabemodus verlassen 2) `yy`
-- 1 Zeile einfügen: 1) Eingamemodus verlassen 2) `p`
+- Eine Zeile kopieren: `yy`
+- Eine Zeile einfügen: `p`
 
 Übersicht zu VIM-Befehlen: https://wiki.ubuntuusers.de/VIM/#VIM-Modi
