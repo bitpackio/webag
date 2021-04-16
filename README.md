@@ -8,6 +8,9 @@ GIT BFEFEHLE
 -> Status des lokalen git Repository anzeigen lassen
 	git status
 
+-> Für eine Stunde keine Zugangsdaten bei pull oder push eingeben
+	git config --global credential.helper 'cache --timeout=3600'
+
 -> Anlagen eines neuen (lokalen) git repositorys aus einem bestehenden Repository von github:
 	git clone <URL des Git-Repositorys auf github>
 
@@ -48,5 +51,7 @@ Wenn man nicht im Eingabemosud ist, kann man Speichern, Schließen, kopieren usw
 -> SPEICHERN: 1) Eingabemodus verlassen 2) :w eingeben, mit Enter bestätigen
 -> Schließen und VIM verlassen: 1) Eingabemodus verlassen 2) :q, mit Enter bestätigen
 -> Speichern und Schließen: 1) Eingabemodus verlassen 2) :wq, mit Enter bestätigen
-
+-> Rückgängig: 1) Eingabemodus verlassen 2) dd
+-> 1 Zeile Kopieren: 1) Eingabemodus verlassen 2) yy
+-> 1 Zeile Pasten: 1) Eingamemodus verlassen 2) p
 
