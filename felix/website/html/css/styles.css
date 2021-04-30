@@ -10173,23 +10173,23 @@ body {
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background-color: transparent;
+/*  background-color: transparent;*/
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
     padding: 0.5rem 0;
     /* color: rgba(255, 255, 255, 0.5); */
-    color: rgba(0, 0, 0, 1); 
+    color: rgba(0, 0, 0, 1);
   }
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
     /* color: rgba(255, 255, 255, 0.5); */
-    color: rgba(0, 0, 0, 1); 
+    color: rgba(0, 0, 0, 1);
   }
   #mainNav .nav-link:hover {
     /* color: rgba(255, 255, 255, 0.75); */
-    color: rgba(0, 0, 0, 1); 
+    color: rgba(0, 0, 0, 1);
   }
   #mainNav .nav-link:active {
     color: #fff;
@@ -10235,7 +10235,7 @@ body {
   min-height: 35rem;
   padding: 15rem 0;
   /* Splash Screen Background Image */
-  /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 98%, #000000 100%), url("../assets/img/demo-splash.jpg"); 
+  /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 98%, #000000 100%), url("../assets/img/demo-splash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10263,7 +10263,7 @@ body {
   min-height: 15rem;
   padding: 10rem 0;
   /* Splash Screen Background Image */
-  /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 98%, #000000 100%), url("../assets/img/demo-splash.jpg"); 
+  /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 98%, #000000 100%), url("../assets/img/demo-splash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10348,11 +10348,11 @@ body {
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url("../assets/img/bg-footer.jpg"); 
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url("../assets/img/bg-footer.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: cover; 
+  background-size: cover;
   color: #000;
 }
 .signup-section .form-inline input {
