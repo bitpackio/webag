@@ -1,0 +1,48 @@
+.nav-fachbereiche {
+	width: 900px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	margin: 1.2rem auto;
+}
+
+.nav-fachbereiche li {
+	list-style-type: none;
+}
+
+.nav-fachbereiche li a {
+	transition: filter 150ms;
+	padding: 0 1.8rem;
+	height: 5rem;
+	box-sizing: border-box;
+	vertical-align: middle;
+	text-align: center;
+	color: #455;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-fachbereiche li a:hover {
+	filter: contrast(85%);
+}
+
+.nav-fachbereiche .fachbereich-nawi {
+	background: #9fc;
+}
+
+.nav-fachbereiche .fachbereich-sprache {
+	background: #ff8c97;
+}
+
+.nav-fachbereiche .fachbereich-kunst {
+	background: #ff8;
+}
+
+.nav-fachbereiche .fachbereich-gewi {
+	background: #ffca64;
+}
+
+.nav-fachbereiche .fachbereich-sport {
+	background: #9df;
+}
