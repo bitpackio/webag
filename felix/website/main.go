@@ -21,7 +21,7 @@ const (
 )
 
 var (
-    serverPort string = ":8080"
+    serverPort string = "0.0.0.0:8080"
 )
 
 func log(s string) {
