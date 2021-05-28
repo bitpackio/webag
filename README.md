@@ -83,7 +83,7 @@ Außerhalb des Eingabemodus:
 Website vom Handy aus aufrufen
 ------------------------------
 
-- Zeile `serverPort string = ":8080"` in `serverPort string = "0.0.0.0:8080"` ändern
+- in `website/main.go` die Zeile `serverPort string = ":8080"` in `serverPort string = "0.0.0.0:8080"` ändern
 
 - mit root-Rechten mit `service firewalld stop` die Firewall des Fedora-Sticks deaktivieren
 
