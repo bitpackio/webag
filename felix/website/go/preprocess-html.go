@@ -55,10 +55,10 @@ func main() {
 	rootdir := "../html/"
 	
 	os.RemoveAll(outputdir)
-	os.Mkdir(outputdir, 1644)
+	os.Mkdir(outputdir, 0o775)
 	
-	importre := regexp.MustCompile(`<import +src="(.*?)" ?\/?>(<\/import>)?\n?`)
-	pathre := regexp.MustCompile(`^(.*\/)[^/]*`)
+	importre := regexp.MustCompile(`<import src="(.*?)" ?\/?>(<\/import>)?\n?`) // <import src="bla.html">
+	pathre := regexp.MustCompile(`^(.*\/)[^/]*`) // dir/bla/file.html, path = dir/bla/
 
 	err := filepath.Walk(srcdir, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
@@ -69,29 +69,30 @@ func main() {
 		outputpath := strings.Replace(path, srcdir, outputdir, 1)
 		
 		if info.IsDir() {
-			os.Mkdir(outputpath, 1644)
+			os.Mkdir(outputpath, 775)
+			fmt.Println("Creating directory", path)
 		} else {
+			fmt.Println("Creating file", path)
 			content := importre.ReplaceAllStringFunc(
 				read2string(path),
 				func(match string) string {
 					importname := importre.FindStringSubmatch(match)[1]
+					fmt.Println("Importing", importname)
 					var importpath string
 
 					if strings.Index(importname, "/") == 0 {
 						importpath = rootdir + importname[1:]
 					} else {
 						importpathmatches := pathre.FindStringSubmatch(outputpath)
-						if importpathmatches == nil {
-							importpath = outputdir
-						} else {
-							importpath = importpathmatches[1]
+						importpath = outputdir
+						if importpathmatches != nil {
+							importpath += importpathmatches[1]
 						}
 						importpath += importname
 						
 					}
 					return read2string(importpath)
-				}
-			)
+				})
 			
 			outputfile, err := os.Create(outputpath)
 			if err != nil {
@@ -101,10 +102,11 @@ func main() {
 			outputfile.WriteString(content)
 			outputfile.Close()
 		}
-		
+
 		return nil
 	})
-	
-	
-	fmt.Println(filelist("../"))
+
+	if err != nil {
+		fmt.Println(err)
+	}
 }
