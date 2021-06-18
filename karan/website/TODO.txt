@@ -1,0 +1,17 @@
+
+In allen Seiten die Navigation korrigieren:
+
+- js-scroll-trigger
+
+<a class="navbar-brand js-scroll-trigger" href="../index.html">Herder-Gymnasium Berlin</a>
+<a class="navbar-brand" href="/">Herder-Gymnasium Berlin</a>
+
+<li class="nav-item"><a class="nav-link js-scroll-trigger" href="../de/school.html">Unsere Schule</a></li>
+<li class="nav-item"><a class="nav-link" href="/de/school.html">Unsere Schule</a></li>
+
+Migrate:
+
+Schüler
+
+
+
