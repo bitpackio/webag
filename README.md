@@ -78,3 +78,15 @@ Außerhalb des Eingabemodus:
 - Eine Zeile einfügen: `p`
 
 Übersicht zu VIM-Befehlen: https://wiki.ubuntuusers.de/VIM/#VIM-Modi
+
+
+Website vom Handy aus aufrufen
+------------------------------
+
+- in `website/main.go` die Zeile `serverPort string = ":8080"` in `serverPort string = "0.0.0.0:8080"` ändern
+
+- mit root-Rechten mit `service firewalld stop` die Firewall des Fedora-Sticks deaktivieren
+
+- über `ifconfig` die lokale IP-Adresse (beginnend mit 192.168...) herausfinden
+
+- auf dem Handy die IP-Adresse im Browser aufrufen (im lokalen WLAN): `http://192.168.178.XX:8080`
