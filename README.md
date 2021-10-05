@@ -102,5 +102,5 @@ HTML-Klassen
 	[<figcaption>...</figcaption>]
 </figure>
 ```
-- mehrere Bilder: mehrere `html<figure>` tags in einem `html<div class="gallery">`
-- Slider: mehrere `html<figure>` tags in einem `html<div class="slider">` 
+- mehrere Bilder: mehrere `<figure>` tags in einem `<div class="gallery">`
+- Slider: mehrere `<figure>` tags in einem `<div class="slider">` 
