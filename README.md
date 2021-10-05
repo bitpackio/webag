@@ -103,3 +103,4 @@ HTML-Klassen
 </figure>
 ```
 - mehrere Bilder: mehrere `<figure>` tags in einem `<div class="gallery">`
+- Slider: mehrere `<figure>` tags in einem `<div class="slider">` 
