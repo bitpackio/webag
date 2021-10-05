@@ -96,7 +96,7 @@ HTML-Klassen
 ------------
 
 - einzelne Bilder:
-```
+```html
 <figure>
 	<img src="..." />
 	[<figcaption>...</figcaption>]
