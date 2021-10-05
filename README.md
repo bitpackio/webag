@@ -95,11 +95,10 @@ Website vom Handy aus aufrufen
 HTML-Klassen
 ------------
 
-- einzelne Bilder:
-```
-	<figure>
-		<img src="..." />
-		[<figcaption>...</figcaption>]
-	</figure>
+- einzelne Bilder: ```
+<figure>
+	<img src="..." />
+	[<figcaption>...</figcaption>]
+</figure>
 ```
 - mehrere Bilder: mehrere `<figure>` tags in einem `<div class="gallery">`
