@@ -95,7 +95,8 @@ Website vom Handy aus aufrufen
 HTML-Klassen
 ------------
 
-- einzelne Bilder: ```
+- einzelne Bilder:
+```
 <figure>
 	<img src="..." />
 	[<figcaption>...</figcaption>]
