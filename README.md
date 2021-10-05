@@ -90,3 +90,14 @@ Website vom Handy aus aufrufen
 - über `ifconfig` die lokale IP-Adresse (beginnend mit 192.168...) herausfinden
 
 - auf dem Handy die IP-Adresse im Browser aufrufen (im lokalen WLAN): `http://192.168.178.XX:8080`
+
+
+HTML-Klassen
+------------
+
+- einzelne Bilder:
+`<figure>
+	<img src="..." />
+	[<figcaption>...</figcaption>]
+</figure>`
+- mehrere Bilder: mehrere `<figure>` tags in einem `<div class="gallery">`
