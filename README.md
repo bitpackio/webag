@@ -96,10 +96,10 @@ HTML-Klassen
 ------------
 
 - einzelne Bilder:
-<code>
+```
 	<figure>
 		<img src="..." />
 		[<figcaption>...</figcaption>]
 	</figure>
-</code>
+```
 - mehrere Bilder: mehrere `<figure>` tags in einem `<div class="gallery">`
